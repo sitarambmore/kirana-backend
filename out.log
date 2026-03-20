@@ -1,0 +1,238 @@
+﻿[dotenv@17.3.1] injecting env (13) from .env -- tip: ΓÜÖ∩╕Å  override existing env vars with { override: true }
+node : D:\Kirana Store 
+Management App\backend\node_mo
+dules\@prisma\client\runtime\c
+lient.js:70
+At line:1 char:1
++ node test_conn.js 2>&1 | 
+Out-File -FilePath out.log 
+-Encoding utf8
++ ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : 
+    NotSpecified: (D:\Kirana  
+   Store...me\client.js:70:   
+ String) [], RemoteExcepti    
+on
+    + FullyQualifiedErrorId : 
+    NativeCommandError
+ 
+${n}`}var Ul=require("@prisma/
+client-runtime-utils");functio
+n Bl(e){return e.length===0?Pr
+omise.resolve([]):new 
+Promise((t,r)=>{let n=new Arra
+y(e.length),i=null,o=!1,s=0,a=
+()=>{o||(s++,s===e.length&&(o=
+!0,i?r(i):t(n)))},l=u=>{o||(o=
+!0,r(u))};for(let u=0;u<e.leng
+th;u++)e[u].then(c=>{n[u]=c,a(
+)},c=>{if(!(0,Ul.hasBatchIndex
+)(c)){l(c);return}c.batchReque
+stIdx===u?l(c):(i||(i=c),a())}
+)})}var 
+rt=_("prisma:client");typeof g
+lobalThis=="object"&&(globalTh
+is.NODE_CLIENT=!0);var Nm={req
+uestArgsToMiddlewareArgs:e=>e,
+middlewareArgsToRequestArgs:e=
+>e},Wl=Symbol.for("prisma.clie
+nt.transaction.scope_context")
+;function Ql(e){let 
+r=e[Wl];if(r===void 0)return{k
+ind:"top-level"};if(Dm(r))retu
+rn r;throw new 
+Error("Internal error: 
+inconsistent transaction 
+scope context.")}function 
+Dm(e){if(typeof e!="object"||e
+===null)return!1;let 
+t=e;return 
+t.kind==="nested"&&typeof 
+t.txId=="string"&&typeof t.sco
+peId=="string"&&Mm(t.scopeStat
+e)}function Mm(e){return 
+typeof e!="object"||e===null?!
+1:Array.isArray(e.stack)}funct
+ion Fm(){return typeof globalT
+his.crypto?.randomUUID=="funct
+ion"?globalThis.crypto.randomU
+UID():`${Date.now()}-${Math.ra
+ndom().toString(16).slice(2)}`
+}var _m={id:0,nextId(){return+
++this.id}};function 
+Kl(e){class t{_originalClient=
+this;_runtimeDataModel;_reques
+tHandler;_connectionPromise;_d
+isconnectionPromise;_engineCon
+fig;_accelerateEngineConfig;_c
+lientVersion;_errorFormat;_tra
+cingHelper;_previewFeatures;_a
+ctiveProvider;_globalOmit;_ext
+ensions;_engine;_appliedParent
+;_createPrismaPromise=pi();con
+structor(n){if(!n)throw new b.
+PrismaClientInitializationErro
+r("`PrismaClient` needs to be 
+constructed with a non-empty, 
+valid `PrismaClientOptions`:\n
+\n```\nnew PrismaClient({\n  .
+..\n})\n```\n\nor\n\n```\ncons
+tructor() {\n  super({ ... 
+});\n}\n```\n          ",yi);e
+=n.__internal?.configOverride?
+.(e)??e,jl(n,e);let i=new zl.E
+ventEmitter().on("error",()=>{
+});this._extensions=Qe.empty()
+,this._previewFeatures=e.previ
+ewFeatures,this._clientVersion
+=e.clientVersion??yi,this._act
+iveProvider=e.activeProvider,t
+his._globalOmit=n?.omit,this._
+tracingHelper=kl();let o;if(n.
+adapter){o=n.adapter;let s=e.a
+ctiveProvider==="postgresql"||
+e.activeProvider==="cockroachd
+b"?"postgres":e.activeProvider
+;if(o.provider!==s)throw new b
+.PrismaClientInitializationErr
+or(`The Driver Adapter 
+\`${o.adapterName}\`, based 
+on \`${o.provider}\`, is not 
+compatible with the provider 
+\`${s}\` specified in the 
+Prisma schema.`,this._clientVe
+rsion)}try{let s=n??{},l=(s.__
+internal??{}).debug===!0;if(l&
+&_.enable("prisma:client"),s.e
+rrorFormat?this._errorFormat=s
+.errorFormat:process.env.NODE_
+ENV==="production"?this._error
+Format="minimal":process.env.N
+O_COLOR?this._errorFormat="col
+orless":this._errorFormat="col
+orless",this._runtimeDataModel
+=e.runtimeDataModel,this._engi
+neConfig={enableDebugLogs:l,lo
+gLevel:s.log&&Ol(s.log),logQue
+ries:s.log&&!!(typeof s.log=="
+string"?s.log==="query":s.log.
+find(u=>typeof u=="string"?u==
+="query":u.level==="query")),c
+ompilerWasm:e.compilerWasm,cli
+entVersion:e.clientVersion,pre
+viewFeatures:this._previewFeat
+ures,activeProvider:e.activePr
+ovider,inlineSchema:e.inlineSc
+hema,tracingHelper:this._traci
+ngHelper,transactionOptions:{m
+axWait:s.transactionOptions?.m
+axWait??2e3,timeout:s.transact
+ionOptions?.timeout??5e3,isola
+tionLevel:s.transactionOptions
+?.isolationLevel},logEmitter:i
+,adapter:o,accelerateUrl:s.acc
+elerateUrl,sqlCommenters:s.com
+ments,parameterizationSchema:e
+.parameterizationSchema,runtim
+eDataModel:e.runtimeDataModel}
+,this._accelerateEngineConfig=
+Object.create(this._engineConf
+ig),this._accelerateEngineConf
+ig.accelerateUtils={resolveDat
+asourceUrl:()=>{if(s.accelerat
+eUrl)return 
+s.accelerateUrl;throw new b.Pr
+ismaClientInitializationError(
+`\`accelerateUrl\` is 
+required when using \`@prisma/
+extension-accelerate\`:
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+
+PrismaClientInitializationErro
+r: `PrismaClient` needs to be 
+constructed with a non-empty, 
+valid `PrismaClientOptions`:
+
+```
+new PrismaClient({
+  ...
+})
+```
+
+or
+
+```
+constructor() {
+  super({ ... });
+}
+```
+          
+    at new t (D:\Kirana Store 
+Management App\backend\node_mo
+dules\@prisma\client\runtime\c
+lient.js:70:1527)
+    at Object.<anonymous> 
+(D:\Kirana Store Management 
+App\backend\test_conn.js:4:16)
+    at Module._compile (node:i
+nternal/modules/cjs/loader:176
+0:14)
+    at Object..js (node:intern
+al/modules/cjs/loader:1893:10)
+    at Module.load (node:inter
+nal/modules/cjs/loader:1480:32
+)
+    at Module._load (node:inte
+rnal/modules/cjs/loader:1299:1
+2)
+    at 
+TracingChannel.traceSync (node
+:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:in
+ternal/modules/cjs/loader:244:
+24)
+    at 
+Module.executeUserEntryPoint 
+[as runMain] (node:internal/mo
+dules/run_main:154:5)
+    at node:internal/main/run_
+main_module:33:47 {
+  clientVersion: '7.5.0',
+  errorCode: undefined,
+  retryable: undefined
+}
+
+Node.js v24.11.0
